@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menghitung luas segitiga </title>
+</head>
+<body>
+    <h3>Menghitung Luas segitiga</h3>
+    <form>
+        
+        <div>
+            Nilai Alas
+            <input type ="number" id="txAlas">
+        </div>
+        <div>
+            Nilai Tinggi
+            <input type ="number" id="txTinggi">
+        </div>
+        <div>
+            Nilai luas
+            <input type ="number" id="txLuas" disabled>
+        </div>
+        <div>
+            
+            <button type="button" onclick="hLUAS()">Hitung Luas</button>
+            
+        </div>
+    </form>
+    <div id="hs1"></div>
+    <script>
+        function hLUAS(){
+          let A = document.getElementById("txALAS").value;
+          let T = document.getElementById("txTINGGI").value;
+          let L = a*t/2;
+
+          document.getElementById("txLuas").value = L;
+
+        }
+    </script>
+</body>
+</html>
